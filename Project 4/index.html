@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <nav class="navbar">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo-dans-meat-yogurt.svg"
+              alt="Dan's Meat Yoghurt Logo"
+            />
+          </a>
+        </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto float-right">
+            <li
+              class="nav-item dropdown btn btn-outline-light mr-5"
+              style="width: 120px;"
+            >
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Flavours
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Ham</a>
+                <a class="dropdown-item" href="#">Beef</a>
+                <a class="dropdown-item" href="#">Chicken</a>
+                <a class="dropdown-item" href="#">Fish</a>
+              </div>
+            </li>
+            <li class="nav-item btn btn-outline-light" style="width: 120px;">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- jumbotron -->
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-7 col-12 text-center text-md-left">
+            <h1 class="display-4 text-white dropshadow">Thick & Creamy</h1>
+            <p class="lead">
+              With real meat chuncks
+            </p>
+
+            <a
+              class="btn btn-outline-light btn-lg mt-4 px-5 py-3 mb-5 mb-md-0"
+              href="#"
+              role="button"
+              >Pricing</a
+            >
+          </div>
+          <div class="col-md-5 col-12">
+            <img
+              src="images/hero1.png"
+              alt="Meat Yogurts"
+              class="img-fluid float-right"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Founder Message -->
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <img
+            src="images/headshot-dan.jpg"
+            class="img-fluid rounded-left border-lg border-0"
+            alt="Daniel Walter Scott -Meat Yogurt Founder"
+          />
+        </div>
+        <div
+          class="col-12 col-md-8 bg-white p-5 d-flex align-items-center border border-dark rounded-right border-lg"
+        >
+          <section>
+            <h2>Message From our Founder</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              maxime in ratione omnis, corrupti porro quia nobis quidem ducimus
+              quae illum quo esse id, aperiam tempora veniam nostrum sit sequi!
+              Iure similique dolores totam omnis atque cumque doloremque maxime,
+              quod natus, nesciunt adipisci aliquam eaque deserunt sed optio
+              impedit quia tenetur dicta praesentium repudiandae? Sunt aliquam
+              exercitationem voluptas earum incidunt?
+            </p>
+          </section>
+        </div>
+      </div>
+      <!-- carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide d-none d-md-block carousel-fade"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="500">
+            <img src="images/yogurt-2.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-interval="500">
+            <img src="images/yogurt-3.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-interval="500">
+            <img src="images/yogurt-1.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- cards -->
+      <div class="card-deck">
+        <div class="card shadow" style="width: 18rem;">
+          <img src="images/product1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/product2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/product3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- this are the script for boostrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

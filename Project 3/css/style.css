@@ -1,0 +1,152 @@
+body {
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.container {
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 140px;
+}
+
+.col {
+  background-color: rgb(218, 47, 47);
+  width: 30%;
+  margin-bottom: 40px;
+}
+.col p {
+  color: white;
+  font-size: 0.875rem;
+  padding: 20px 25px;
+  line-height: 1.25rem;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+.col p::first-line {
+  font-weight: bold;
+}
+
+.header-container {
+  background-color: rgb(61, 61, 61);
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
+}
+.footer-container {
+  background-color: rgb(61, 61, 61);
+  min-height: 100px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+header {
+  min-height: 100px;
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  background-color: turquoise;
+  min-height: 100px;
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+span {
+  font-weight: bold;
+}
+
+.mybutton {
+  margin-left: 20px;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+}
+.mob-wrapper {
+  display: none;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mob-wrapper {
+    display: block;
+    padding-right: 40px;
+  }
+  .mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+  }
+
+  .navbutton{
+    display: block;
+    background-color: coral;
+    padding: 15px 30px;
+    margin-left: -70px;
+  }
+  .header-container{
+    padding: 0 20px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .col {
+    width: 100%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  
+  .header-container {
+    position: relative;
+    padding: 0 10px;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+  nav a {
+    display: block;
+    margin-right: 20px;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    padding: 40px 0;
+  }
+}
